@@ -8,7 +8,10 @@ public class gNome{
 	public static void main(String[] args){
 		generador gen = new generador();
 		gen.rad();
+		long start = System.currentTimeMillis();
 		gnomeSort(gen.tomar());
+        long end = System.currentTimeMillis();
+        System.out.println(end-start+"ms");
 	}
 
 	static void gnomeSort(int[] elArray){
