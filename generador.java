@@ -16,7 +16,7 @@ public class generador {
 				FileWriter fw = new FileWriter("Blanco.txt");
 				BufferedWriter escritor= new BufferedWriter(fw);
 				for(int i=0;i<3000;i++){
-					s=random.nextInt(20);
+					s=random.nextInt(1000);
 					escritor.write(s+"\n");
 				}
 				escritor.close();
