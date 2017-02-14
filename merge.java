@@ -13,8 +13,11 @@ public class merge {
 			System.out.println(lista2[x]);
 			x++;
 		}
+		long start = System.currentTimeMillis();
 		mergeSort(lista2);
+		long end = System.currentTimeMillis();
 		System.out.println(Arrays.toString(lista2));
+		System.out.println(end-start + "ms");
 	}
 	
 	
